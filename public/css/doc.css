@@ -1,0 +1,400 @@
+/*start global*/
+
+*{
+    box-sizing: border-box !important;
+}
+
+/*------scroll bar---------------------*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background: #31353D;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #525965;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #525965;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+    background: transparent;
+}
+::-webkit-scrollbar-track:active {
+    background: transparent;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/*------end scroll bar---------------------*/
+
+.fa-times{
+    cursor: pointer;
+}
+
+h1, .h1{
+    color: #6A6A6A;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 45px;
+    padding: 10px 0 30px;
+}
+
+table thead{
+    background-color: #34495e;
+    color: #FFF;
+}
+
+table thead tr th{
+    border-color: #34495e !important;
+}
+
+.register_student #group_id option,
+.add_group #sector_id option{
+    display: none !important;
+}
+
+
+table .table_thead_students,
+table .table_thead_teachers,
+table .table_thead_users,
+table .thead_secotrs,
+table .table_thead_groups,
+table .table_thead_specialities,
+table .table_thead_dashboard_students{
+    background-color: #FFF;
+}
+
+table:not(.groups):not(.student_payments):not(.sectors_table):not(.dashboard_students) thead th:first-child::before,
+table:not(.groups):not(.student_payments):not(.sectors_table):not(.dashboard_students) thead th:first-child::after{
+    display: none !important;
+}
+
+.statements .item{
+    padding: 0 5px;
+}
+
+.statements .item .badge{
+    position: relative !important;
+    top: -4px !important;
+    padding: 5px 10px !important;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.student_registration_section .item .badge,
+.payment_info_section .item .badge,
+.teacher_info_section .item .badge,
+.user_info_section .item .badge{
+    font-size: 17px !important;
+    font-weight: normal !important;
+}
+
+.student_registration_section .item .bdg,
+.payment_info_section .item .bdg,
+.teacher_info_section .item .bdg,
+.user_info_section .item .bdg{
+    background-color: #34495e !important;
+    color: #dee2e5 !important;
+}
+
+.user_info_section img,
+.teacher_info_section img,
+.student_profile img{
+    box-shadow: 5px 5px 10px #6A6A6A;
+    width: 200px;
+    height: 220px;
+}
+
+/*end global*/
+
+/* start header */
+
+.header{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: #31353D;
+    height: 60px;
+    padding: 0 15px 0 10px;
+    top: 0;
+    left: 0;
+}
+
+.header .text-quote{
+    color: #818896;
+}
+
+.header .fa-bars{
+    cursor: pointer;
+    color: #FFF;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.header .fa-bars:hover{
+    color: #19B3D3;
+}
+
+.header .btn{
+    background-color: #19B3D3 !important;
+    border: none;
+    margin-top: 5px;
+}
+
+/* end header */
+
+/* start sidebar */
+
+.sc{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sc .sidebar {
+    background-color: #31353D;
+    height: 100%;
+    position: fixed;
+    width: 230px;
+    z-index: 9999;
+    padding-top: 35px;
+}
+
+.sc .sidebar .item{
+    display: block;
+    text-decoration: none;
+    color: #818896 !important;
+    padding: 18px;
+    font-size: 16px;
+    transition: .5s;
+    border-bottom: 1px solid #3a3f48;
+    cursor: pointer;
+}
+
+.sc .sidebar .item:hover,
+.sc .sidebar .item.active{
+    background-color: #19B3D3;
+    color: #FFF !important;
+}
+
+.sc .sidebar .item i{
+    margin-right: 5px;
+    text-align: center;
+}
+
+.sc .content{
+    width: 100%;
+    margin-left: 230px;
+    padding: 30px;
+}
+
+.sc .submenu{
+    margin: 0;
+    display: none;
+}
+
+.sc .submenu:not(:last-of-type){
+    border-bottom: .3px solid #3a3f48;
+}
+
+.sc .sidebar .submenu .active{
+    background-color: rgba(25, 179, 211, .5);
+    color: #FFF !important;
+}
+
+.sc .submenu li a{
+    color: #818896 !important;
+    padding-left: 35px !important;
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.sc .submenu li a:hover{
+    background-color: #19B3D3;
+    transition: .5s;
+    color: #FFF !important;
+}
+
+.sc .submenu li a i{
+    font-size: 14px;
+}
+
+
+.sidebar-header {
+    margin-top: 20px;
+    padding: 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #3a3f48;
+}
+
+.sidebar-header .user-pic {
+    float: left;
+    width: 70px;
+    height: 90px;
+    padding: 2px;
+    border-radius: 12px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.sidebar-header .user-pic img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar-header .user-info {
+    float: left;
+    padding-top: 7px;
+    color: #b8bfce !important;
+}
+
+.sidebar-header .user-info > span {
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.sc .sidebar-header .user-info .user-role {
+    font-size: 15px;
+    font-weight: normal
+}
+
+/* end sidebar */
+
+/*start login*/
+
+.login{
+    background-color: #FFF;
+    margin: 115px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #2980b9;
+    max-width: 415px !important;
+}
+
+.login .logo h3{
+    color: #6A6A6A;
+    padding: 25px;
+}
+
+.login .logo h3::after{
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: #3498db;
+    margin-top: 10px;
+    width: 140px;
+    position: relative;
+    left: 50%;
+    margin-left: -70px;
+}
+
+.login .logo .img{
+    background-image: url('../imgs/school.png');
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+.login .inputs{
+    margin-top: 40px;
+}
+
+/*end login*/
+
+/*start student*/
+
+.student_profile .item label:first-child{
+    width: 30%;
+}
+
+.student_profile .item label:last-child{
+    width: 68%;
+}
+
+.student_profile .item label{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.student_profile .student_registration_section .badge-success span{
+    position: relative !important;
+    top: -3px !important;
+}
+
+.no_global_search .dataTables_wrapper .dataTables_filter,
+.payments .dataTables_wrapper .dataTables_filter{
+    display: none !important;
+}
+
+#delete_student_modal{
+    margin-top: 60px !important;
+}
+
+/*end students*/
+
+/*start payment*/
+
+.add_payment .virment_div,
+.add_payment .check_div{
+    display: none;
+}
+
+/*end payment*/
+
+/*start snippet*/
+
+.bg-c-blue {background:#4099ff;}
+.bg-c-green {background:#2ed8b6;}
+.bg-c-yellow {background:#FFB64D;}
+.bg-c-pink {background:#FF5370}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #AAA;
+    -webkit-box-shadow: 5px 5px 5px #AAA;
+    -moz-box-shadow: 5px 5px 5px #AAA;
+    -o-box-shadow: 5px 5px 5px #AAA;
+    border: none;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.order-card i,
+.card .card-block .h2{
+    font-size: 60px;
+}
+
+/*end snippet*/
+
+/*start access denied*/
+.denied_content{
+    margin-top: 300px;
+}
+.denied_content h3{
+    font-size: 50px;
+    color: #6A6A6A;
+    font-family: Arial, Tahoma;
+}
+.denied_content h3 span{
+    color: #19B3D3;
+}

@@ -27,8 +27,8 @@
         {
             $this->language->load('template.common');
             $this->language->load('student.default');
-            $school_years = SchoolYearModel::getAll();
-            $this->_data['years'] = $school_years;
+            $years = SchoolYearModel::getAll();
+            $this->_data['years'] = $years;
             $this->_data['school_year'] = isset($_GET['year']) ? $this->filterInt($_GET['year']) : (isset($years[0]->school_year_id) ? $years[0]->school_year_id : '');
             if(isset($_GET['status'])){
                 $school_year_id = $this->filterInt(isset($_GET['year']) ? $_GET['year'] : '');

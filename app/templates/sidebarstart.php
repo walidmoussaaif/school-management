@@ -1,11 +1,6 @@
 <div class="header">
     <div class="row">
-        <div class="col-6 d-flex flex-row">
-            <div class="p-2">
-                <h4 class="text-quote text-uppercase font-weight-normal mt-2"><q>be kind to one another</q></h4>
-            </div>
-        </div>
-        <div class="col-6 d-flex flex-row-reverse">
+        <div class="col-12 d-flex flex-row-reverse">
             <div class="p-2">
                 <a id="btn_log_out" href="/auth/logout" class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> <?= $text_log_out ?> M,<?= $this->session->u->first_name ?></a>
             </div>

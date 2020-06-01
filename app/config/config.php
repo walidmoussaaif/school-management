@@ -12,7 +12,7 @@
     defined('DB_HOST_NAME') ? null : define('DB_HOST_NAME','localhost');
     defined('DB_USER_NAME') ? null : define('DB_USER_NAME','root');
     defined('DB_PASSWORD')  ? null : define('DB_PASSWORD','');
-    defined('DB_NAME')      ? null : define('DB_NAME','school');
+    defined('DB_NAME')      ? null : define('DB_NAME','test');
     defined('DB_PORT')      ? null : define('DB_PORT',3306);
 
     //session
